@@ -1,0 +1,28 @@
+$winform-color: rgb(183, 194, 209);
+$drag-opt: no-drag;
+$height:50px;
+$width:50px;
+.winform {
+    height: $height;
+    -webkit-app-region: drag;
+    border-radius: 5px 5px 0px 0px;
+    background-color: $winform-color;
+}
+
+.btn {
+    height: $height !important;
+    float: right;
+    background-color: raba(255,255,255,1);
+    -webkit-app-region: $drag-opt;
+}
+
+.topbar_logo_container {
+    position: absolute;
+    left:10px;
+    height: $height*0.95;
+    width: $width*2;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    display: flex;
+    align-items: center;
+}
